@@ -25,7 +25,7 @@ parser.add_argument('--tensorboard_log',
                     help="Logging directory for TensorBoard log",
                     type=str)
 parser.add_argument('--save_model',
-                    default=True,
+                    default=False,
                     help="Save model after training (True = yes | False = no)",
                     type=bool)
 parser.add_argument('--training_steps',
