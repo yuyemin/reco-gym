@@ -75,7 +75,7 @@ setup.py
 
 1.  Clone the project 
 ```
-git clone https://github.com/sadighian/recommendation-gym.git
+git clone https://github.com/yuyemin/reco-gym.git
 ```
 2.  Create a virtual environment 
 ```
@@ -91,18 +91,7 @@ pip3 install -e .           # execute command inside install directory
 
 4.  Run an experiment
 ```
-python3 ppo_experiment.py --training_steps=100000 --evaluation-steps=10000
+python3 ppo_experiment.py --training_steps=100000 --evaluation_steps=10000
 ```
 Refer to `ppo_experiment.py` for all the flags.
 
-## 4. Citing the Project
-```
-@misc{Recommendation-Gym,
-    author = {Jonathan Sadighian},
-    title = {Recommendation Gym for MovieLens},
-    year = {2019},
-    publisher = {GitHub},
-    journal = {GitHub repository},
-    howpublished = {\url{https://github.com/sadighian/recommendation-gym}},
-}
-```
