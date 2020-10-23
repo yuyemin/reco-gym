@@ -1,17 +1,9 @@
 # Recommendation Gym for MovieLens
-**Table of contents**
-1. Overview
-2. Project Structure
-3. Getting started
-4. Citing this project
-
 
 ## 1. Overview
 
 ### 1.1 Summary
-The purpose of this project was to experiment with the application
-of deep reinforcement learning to recommendation systems.
-More specifically, this project applies `Stable-Baselines`
+This project applies `Stable-Baselines`
 algorithms to the `MovieLens 100k` data set.
 
 To that end, the goal of the agent is to predict what rating 
@@ -59,37 +51,9 @@ data set to prevent a $ValueError$ in Python, if a given *movie_id* or
 exception handling rules, but is out of scope for this experiment.
 
 
-## 2. Project Structure
-```
-gym_recommendation/
-    data/           ...MovieLens 100k data set
-    envs/           ...MDP style environment extending GYM
-    tests/          ...test cases for utilities and GYM
-    utils.py        ...helper functions for downloading data and evaluating the environment
-ppo_experiment.py   ...entry point for running experiments
-requirements.txt    ...project dependencies
-setup.py            
-```
+## 2. Getting Started
 
-## 3. Getting Started
-
-1.  Clone the project 
-```
-git clone https://github.com/yuyemin/reco-gym.git
-```
-2.  Create a virtual environment 
-```
-cd recommendation-gym       # change to project directory
-virtualenv -p python3 venv  # create the virtual environment
-source venv/bin/activate    # start using the venv
-```
-
-3.  Install the project and its dependencies 
-```
-pip3 install -e .           # execute command inside install directory
-```
-
-4.  Run an experiment
+1. Run an experiment
 ```
 python3 ppo_experiment.py --training_steps=100000 --evaluation_steps=10000
 ```
